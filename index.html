@@ -103,6 +103,7 @@
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
   <script>
     let v = Math.floor(Math.random() * 100000)
+    let j = "cooking..! please wait"
       $(function () {
         var socket = io();
         $('form').submit(function(e){
@@ -119,12 +120,12 @@
               const data ={
                 order_id: v,
                 user_name : name,
-                orders : "cheese pizza",
+                orders : order,
                 address: add,
                 email_id:em,
                 phone: ph,
 
-                status: "Cooking.."
+                status: j
               }
                getData()
              async function getData() {
@@ -165,6 +166,13 @@
               let newStr = msg.replace(/phone /g,'');
                 ph = newStr;
                 console.log(ph)
+                
+            }
+            if(msg.search("Chesse Pizza")>= 0)
+            {
+              let newStr = msg.replace(/Chesse Pizza /g,'');
+                order = newStr;
+                console.log(order)
                 
             }
             if(msg.search("status")>=0)
