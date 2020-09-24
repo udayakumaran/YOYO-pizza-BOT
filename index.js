@@ -73,11 +73,24 @@ async function botstr(findStr){
       manager.addDocument('en',"Non-Veg Pizza", 'nveg')
 
       manager.addDocument('en',"Quantity of", 'quantity')
+
+
+      
+      //***********************************************************************************//
+      //************************************************************************************//
+      //************************************************************************************//
+      //************************************************************************************//
+      //************************************************************************************//
+      //************************************************************************************//
+      //************************************************************************************//
+      // Train also the NLG..........Train it to answer
+      
+     // manager.addAnswer('en', 'stat', 'Till next time :)');
        
       manager.addAnswer('en','add','Enter your address :');
       manager.addAnswer('en','em','Enter your email please :');
       manager.addAnswer('en','ph','Enter your phone number please :');
-      manager.addAnswer('en','enough','now you can order your food Type : "order" to select your pizza11');
+      manager.addAnswer('en','enough','success ,now you can order your food Type : "order" to select your pizza');
       manager.addAnswer('en','greetings.hello','WELCOME TO YOYO PIZZA <br> Please enter your details before ordering the food <br> name (e.g : name abcd)     <br>  Address(e.g : address  25 abcd)     <br> email_id (e.g : emaill abc@gmail.com)      <br>     phone number (e.g : phone 1562920) ' )
       let v = Math.floor(Math.random() * 100000)
 
@@ -199,16 +212,6 @@ async function botstr(findStr){
       manager.addDocument('en', "status", 'stat');
 
 
-      //***********************************************************************************//
-      //************************************************************************************//
-      //************************************************************************************//
-      //************************************************************************************//
-      //************************************************************************************//
-      //************************************************************************************//
-      //************************************************************************************//
-      // Train also the NLG..........Train it to answer
-      
-     // manager.addAnswer('en', 'stat', 'Till next time :)');
       manager.addAnswer('en', 'greetings.bye', 'Till next time :)');
       manager.addAnswer('en', 'greetings.bye', 'see you soon!');
 
