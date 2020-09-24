@@ -206,8 +206,8 @@ async function botstr(findStr){
      }); \
      </script> \
      <br> \
-     <button value="1" >order</button> \
-     <button value="2" >Enough </button> ' )
+     <button style="background-color: #16BFFD;border-radius: 10px" value="1" >order</button> \
+     <button style="background-color: #16BFFD;border-radius: 10px" value="2" >Enough </button> ' )
 
       manager.addDocument('en', "status", 'stat');
 

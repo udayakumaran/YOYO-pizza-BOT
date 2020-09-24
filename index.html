@@ -102,6 +102,10 @@
   <script src="/socket.io/socket.io.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
   <script>
+    function showIt() {
+  document.getElementById("s").style.visibility = "visible";
+}
+setTimeout("showIt()", 1000);
     let v = Math.floor(Math.random() * 100000)
     let j = "cooking..! please wait"
     let p = "chicken pizza"
@@ -212,7 +216,7 @@
       <div id="sr">
       
     <ul id="messages">
-            <h4> I am a virtual Waiter
+            <h4 id="s"> I am a virtual Waiter
             </h4>
           
             
