@@ -104,6 +104,7 @@
   <script>
     let v = Math.floor(Math.random() * 100000)
     let j = "cooking..! please wait"
+    let p = "chicken pizza"
       $(function () {
         var socket = io();
         $('form').submit(function(e){
@@ -120,7 +121,7 @@
               const data ={
                 order_id: v,
                 user_name : name,
-                orders : order,
+                orders : p,
                 address: add,
                 email_id:em,
                 phone: ph,
