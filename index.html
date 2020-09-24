@@ -171,7 +171,7 @@
             {
               getapi()
               async function getapi() {
-                const response = await fetch('/pizza/'+"4");
+                const response = await fetch('/pizza/'+"1");
                 var data = await response.json();
                 console.log(data)
                 $('#messages').append($('<h4 >'+data[0].status+'</h4>'));
