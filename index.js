@@ -275,6 +275,4 @@ app.post('/pizza1',(req,res)=>{
 });
 
 //server start
-http.listen(8000, function(){
-  console.log('listening on *:8000');
-});
+http.listen(process.env.PORT);

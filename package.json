@@ -1,0 +1,28 @@
+{
+  "name": "chatbot-master",
+  "version": "1.0.0",
+  "description": "Install all the required npm modules and get set to run a chatbot<br/> Socket.io<br/> Express<br/> http<br/> node-nlp<br/> other dependencies",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "node-nlp": "^4.11.2",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udayakumaran/YOYO-pizza-BOT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udayakumaran/YOYO-pizza-BOT/issues"
+  },
+  "homepage": "https://github.com/udayakumaran/YOYO-pizza-BOT#readme"
+}
