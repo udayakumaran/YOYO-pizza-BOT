@@ -143,6 +143,7 @@ async function botstr(findStr){
            setTimeout(function() {\
             socket.emit("chat message", msg); \
          }, 1); \
+         $("button").hide();\
       }); \
       </script> \
       <br> \
@@ -162,7 +163,8 @@ async function botstr(findStr){
           msg =  "Large"; \
           setTimeout(function() {\
             socket.emit("chat message", msg); \
-         }, 100); \
+         }, 1); \
+         $("button").hide();\
       }); \
       </script> \
       <br> \
@@ -183,7 +185,8 @@ async function botstr(findStr){
            msg = "Quantity of 3"; \
            setTimeout(function() {\
             socket.emit("chat message", msg); \
-         }, 19); \
+         }, 1); \
+         $("button").hide();\
       }); \
       </script> \
       <br> \
@@ -203,6 +206,7 @@ async function botstr(findStr){
           setTimeout(function() {\
            socket.emit("chat message", msg); \
         }, 1); \
+        $("button").hide();\
      }); \
      </script> \
      <br> \
