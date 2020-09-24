@@ -1,0 +1,2156 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "nlu": {
+      "useNoneFeature": false
+    },
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager",
+      "useNoneFeature": false
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "useNoneFeature": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "trainByDomain": false,
+          "useStemDict": true
+        },
+        "stemDict": {
+          "for,goodby,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,okay,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi,there": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hiya": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi-ya": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdy-do": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "aloha": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "day,good": {
+            "intent": "greetings.goodDay",
+            "domain": "default"
+          },
+          "good,night": {
+            "intent": "greetings.goodNight",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greetings.goodMorning",
+            "domain": "default"
+          },
+          "even,good": {
+            "intent": "greetings.goodevening",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greetings.goodafternoon",
+            "domain": "default"
+          },
+          "enough": {
+            "intent": "end",
+            "domain": "default"
+          },
+          "name": {
+            "intent": "add",
+            "domain": "default"
+          },
+          "address": {
+            "intent": "em",
+            "domain": "default"
+          },
+          "email": {
+            "intent": "ph",
+            "domain": "default"
+          },
+          "phone": {
+            "intent": "enough",
+            "domain": "default"
+          },
+          "order": {
+            "intent": "order",
+            "domain": "default"
+          },
+          "order,someth,to,want": {
+            "intent": "order",
+            "domain": "default"
+          },
+          "order,pizza,some,to,want": {
+            "intent": "order",
+            "domain": "default"
+          },
+          "menu": {
+            "intent": "order",
+            "domain": "default"
+          },
+          "pizza,veg": {
+            "intent": "veg",
+            "domain": "default"
+          },
+          "chess,pizza": {
+            "intent": "value",
+            "domain": "default"
+          },
+          "paneer,pizza": {
+            "intent": "value",
+            "domain": "default"
+          },
+          "chicken,pizza": {
+            "intent": "value",
+            "domain": "default"
+          },
+          "pizza,tantoori": {
+            "intent": "value",
+            "domain": "default"
+          },
+          "regular": {
+            "intent": "size",
+            "domain": "default"
+          },
+          "medium": {
+            "intent": "size",
+            "domain": "default"
+          },
+          "larg": {
+            "intent": "size",
+            "domain": "default"
+          },
+          "non-veg,pizza": {
+            "intent": "nveg",
+            "domain": "default"
+          },
+          "of,quantiti": {
+            "intent": "quantity",
+            "domain": "default"
+          },
+          "status": {
+            "intent": "stat",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "greetings.goodDay": "default",
+          "greetings.goodNight": "default",
+          "greetings.goodMorning": "default",
+          "greetings.goodevening": "default",
+          "greetings.goodafternoon": "default",
+          "end": "default",
+          "add": "default",
+          "em": "default",
+          "ph": "default",
+          "enough": "default",
+          "order": "default",
+          "veg": "default",
+          "value": "default",
+          "size": "default",
+          "nveg": "default",
+          "quantity": "default",
+          "stat": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "goodbye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "okay see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi there",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hiya",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi-ya",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy-do",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "aloha",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good day",
+            "intent": "greetings.goodDay"
+          },
+          {
+            "domain": "default",
+            "utterance": "good night",
+            "intent": "greetings.goodNight"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greetings.goodMorning"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greetings.goodevening"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greetings.goodafternoon"
+          },
+          {
+            "domain": "default",
+            "utterance": "Enough",
+            "intent": "end"
+          },
+          {
+            "domain": "default",
+            "utterance": "name ",
+            "intent": "add"
+          },
+          {
+            "domain": "default",
+            "utterance": "address",
+            "intent": "em"
+          },
+          {
+            "domain": "default",
+            "utterance": "email",
+            "intent": "ph"
+          },
+          {
+            "domain": "default",
+            "utterance": "phone",
+            "intent": "enough"
+          },
+          {
+            "domain": "default",
+            "utterance": "Order",
+            "intent": "order"
+          },
+          {
+            "domain": "default",
+            "utterance": "Want to order something",
+            "intent": "order"
+          },
+          {
+            "domain": "default",
+            "utterance": "Want to order some pizza",
+            "intent": "order"
+          },
+          {
+            "domain": "default",
+            "utterance": "Menu",
+            "intent": "order"
+          },
+          {
+            "domain": "default",
+            "utterance": "Veg Pizza",
+            "intent": "veg"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chesse Pizza",
+            "intent": "value"
+          },
+          {
+            "domain": "default",
+            "utterance": "Paneer Pizza",
+            "intent": "value"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chicken Pizza",
+            "intent": "value"
+          },
+          {
+            "domain": "default",
+            "utterance": "tantoori Pizza",
+            "intent": "value"
+          },
+          {
+            "domain": "default",
+            "utterance": "Regular",
+            "intent": "size"
+          },
+          {
+            "domain": "default",
+            "utterance": "Medium",
+            "intent": "size"
+          },
+          {
+            "domain": "default",
+            "utterance": "Large",
+            "intent": "size"
+          },
+          {
+            "domain": "default",
+            "utterance": "Non-Veg Pizza",
+            "intent": "nveg"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quantity of",
+            "intent": "quantity"
+          },
+          {
+            "domain": "default",
+            "utterance": "status",
+            "intent": "stat"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "goodby": 1,
+              "for": 1,
+              "now": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "okay": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "hello": 1,
+              "hi": 1,
+              "there": 1,
+              "howdi": 1,
+              "hiya": 1,
+              "hi-ya": 1,
+              "howdy-do": 1,
+              "aloha": 1,
+              "hey": 1,
+              "good": 1,
+              "day": 1,
+              "night": 1,
+              "morn": 1,
+              "even": 1,
+              "afternoon": 1,
+              "enough": 1,
+              "name": 1,
+              "address": 1,
+              "email": 1,
+              "phone": 1,
+              "order": 1,
+              "want": 1,
+              "to": 1,
+              "someth": 1,
+              "some": 1,
+              "pizza": 1,
+              "menu": 1,
+              "veg": 1,
+              "chess": 1,
+              "paneer": 1,
+              "chicken": 1,
+              "tantoori": 1,
+              "regular": 1,
+              "medium": 1,
+              "larg": 1,
+              "non-veg": 1,
+              "quantiti": 1,
+              "of": 1,
+              "status": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "greetings.goodDay": 1,
+              "greetings.goodNight": 1,
+              "greetings.goodMorning": 1,
+              "greetings.goodevening": 1,
+              "greetings.goodafternoon": 1,
+              "end": 1,
+              "add": 1,
+              "em": 1,
+              "ph": 1,
+              "enough": 1,
+              "order": 1,
+              "veg": 1,
+              "value": 1,
+              "size": 1,
+              "nveg": 1,
+              "quantity": 1,
+              "stat": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "goodby": 1,
+                "for": 1,
+                "now": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "okay": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "there": 1,
+                "howdi": 1,
+                "hiya": 1,
+                "hi-ya": 1,
+                "howdy-do": 1,
+                "aloha": 1,
+                "hey": 1
+              },
+              "greetings.goodDay": {
+                "good": 1,
+                "day": 1
+              },
+              "greetings.goodNight": {
+                "good": 1,
+                "night": 1
+              },
+              "greetings.goodMorning": {
+                "good": 1,
+                "morn": 1
+              },
+              "greetings.goodevening": {
+                "good": 1,
+                "even": 1
+              },
+              "greetings.goodafternoon": {
+                "good": 1,
+                "afternoon": 1
+              },
+              "end": {
+                "enough": 1
+              },
+              "add": {
+                "name": 1
+              },
+              "em": {
+                "address": 1
+              },
+              "ph": {
+                "email": 1
+              },
+              "enough": {
+                "phone": 1
+              },
+              "order": {
+                "order": 1,
+                "want": 1,
+                "to": 1,
+                "someth": 1,
+                "some": 1,
+                "pizza": 1,
+                "menu": 1
+              },
+              "veg": {
+                "veg": 1,
+                "pizza": 1
+              },
+              "value": {
+                "chess": 1,
+                "pizza": 1,
+                "paneer": 1,
+                "chicken": 1,
+                "tantoori": 1
+              },
+              "size": {
+                "regular": 1,
+                "medium": 1,
+                "larg": 1
+              },
+              "nveg": {
+                "non-veg": 1,
+                "pizza": 1
+              },
+              "quantity": {
+                "quantiti": 1,
+                "of": 1
+              },
+              "stat": {
+                "status": 1
+              }
+            },
+            "featuresToIntent": {
+              "goodby": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "okay": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "i": [
+                "greetings.bye"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "there": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "hiya": [
+                "greetings.hello"
+              ],
+              "hi-ya": [
+                "greetings.hello"
+              ],
+              "howdy-do": [
+                "greetings.hello"
+              ],
+              "aloha": [
+                "greetings.hello"
+              ],
+              "hey": [
+                "greetings.hello"
+              ],
+              "good": [
+                "greetings.goodDay",
+                "greetings.goodNight",
+                "greetings.goodMorning",
+                "greetings.goodevening",
+                "greetings.goodafternoon"
+              ],
+              "day": [
+                "greetings.goodDay"
+              ],
+              "night": [
+                "greetings.goodNight"
+              ],
+              "morn": [
+                "greetings.goodMorning"
+              ],
+              "even": [
+                "greetings.goodevening"
+              ],
+              "afternoon": [
+                "greetings.goodafternoon"
+              ],
+              "enough": [
+                "end"
+              ],
+              "name": [
+                "add"
+              ],
+              "address": [
+                "em"
+              ],
+              "email": [
+                "ph"
+              ],
+              "phone": [
+                "enough"
+              ],
+              "order": [
+                "order"
+              ],
+              "want": [
+                "order"
+              ],
+              "to": [
+                "order"
+              ],
+              "someth": [
+                "order"
+              ],
+              "some": [
+                "order"
+              ],
+              "pizza": [
+                "order",
+                "veg",
+                "value",
+                "nveg"
+              ],
+              "menu": [
+                "order"
+              ],
+              "veg": [
+                "veg"
+              ],
+              "chess": [
+                "value"
+              ],
+              "paneer": [
+                "value"
+              ],
+              "chicken": [
+                "value"
+              ],
+              "tantoori": [
+                "value"
+              ],
+              "regular": [
+                "size"
+              ],
+              "medium": [
+                "size"
+              ],
+              "larg": [
+                "size"
+              ],
+              "non-veg": [
+                "nveg"
+              ],
+              "quantiti": [
+                "quantity"
+              ],
+              "of": [
+                "quantity"
+              ],
+              "status": [
+                "stat"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "useNoneFeature": false,
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "goodby",
+                "for",
+                "now",
+                "bye",
+                "take",
+                "care",
+                "okay",
+                "see",
+                "you",
+                "later",
+                "i",
+                "must",
+                "go",
+                "hello",
+                "hi",
+                "there",
+                "howdi",
+                "hiya",
+                "hi-ya",
+                "howdy-do",
+                "aloha",
+                "hey",
+                "good",
+                "day",
+                "night",
+                "morn",
+                "even",
+                "afternoon",
+                "enough",
+                "name",
+                "address",
+                "email",
+                "phone",
+                "order",
+                "want",
+                "to",
+                "someth",
+                "some",
+                "pizza",
+                "menu",
+                "veg",
+                "chess",
+                "paneer",
+                "chicken",
+                "tantoori",
+                "regular",
+                "medium",
+                "larg",
+                "non-veg",
+                "quantiti",
+                "of",
+                "status"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "greetings.goodDay",
+                "greetings.goodNight",
+                "greetings.goodMorning",
+                "greetings.goodevening",
+                "greetings.goodafternoon",
+                "end",
+                "add",
+                "em",
+                "ph",
+                "enough",
+                "order",
+                "veg",
+                "value",
+                "size",
+                "nveg",
+                "quantity",
+                "stat"
+              ],
+              "perceptrons": [
+                [
+                  4.357466697692871,
+                  4.576935768127441,
+                  4.576935768127441,
+                  4.670947551727295,
+                  4.456598281860352,
+                  4.456598281860352,
+                  3.414527654647827,
+                  3.414527654647827,
+                  3.414527654647827,
+                  3.414527654647827,
+                  4.5556559562683105,
+                  4.5556559562683105,
+                  4.5556559562683105,
+                  -1.2239789962768555,
+                  -0.628561794757843,
+                  -0.628561794757843,
+                  -0.7762813568115234,
+                  -0.7685050368309021,
+                  -0.7460440397262573,
+                  -0.7241710424423218,
+                  -0.71317458152771,
+                  -0.6937500238418579,
+                  -1.217898964881897,
+                  -0.2652301490306854,
+                  -0.23873823881149292,
+                  -0.21231834590435028,
+                  -0.18744339048862457,
+                  -0.16473107039928436,
+                  -0.6545652151107788,
+                  -0.6431391835212708,
+                  -0.6313380599021912,
+                  -0.6200410723686218,
+                  -0.6166661977767944,
+                  -0.6887896060943604,
+                  -0.24917688965797424,
+                  -0.24917688965797424,
+                  -0.15903981029987335,
+                  -0.05946813523769379,
+                  -0.9164066910743713,
+                  -0.613483726978302,
+                  -0.160800039768219,
+                  -0.14476436376571655,
+                  -0.12869933247566223,
+                  -0.11354349553585052,
+                  -0.09969579428434372,
+                  -0.6099642515182495,
+                  -0.6077020168304443,
+                  -0.60530686378479,
+                  -0.06017870828509331,
+                  -0.3419701159000397,
+                  -0.3419701159000397,
+                  -0.6018150448799133,
+                  0.6167204868174017
+                ],
+                [
+                  -1.2046524286270142,
+                  -1.5918352603912354,
+                  -1.5918352603912354,
+                  -1.7204856872558594,
+                  -1.3333035707473755,
+                  -1.3333035707473755,
+                  -1.098215937614441,
+                  -1.098215937614441,
+                  -1.098215937614441,
+                  -1.098215937614441,
+                  -1.461659550666809,
+                  -1.461659550666809,
+                  -1.461659550666809,
+                  9.922843933105469,
+                  4.962255477905273,
+                  4.962255477905273,
+                  9.666887283325195,
+                  9.615848541259766,
+                  9.562845230102539,
+                  9.507938385009766,
+                  9.45119571685791,
+                  9.392679214477539,
+                  -4.437327861785889,
+                  -0.9993435740470886,
+                  -0.936834454536438,
+                  -0.8470524549484253,
+                  -0.7817850708961487,
+                  -0.7189126014709473,
+                  -4.434873580932617,
+                  -4.413017272949219,
+                  -4.390167236328125,
+                  -4.366354942321777,
+                  -4.341614723205566,
+                  -4.350890159606934,
+                  -0.8479942083358765,
+                  -0.8479942083358765,
+                  -0.6067861914634705,
+                  -0.1629691869020462,
+                  -3.9576773643493652,
+                  -4.293241024017334,
+                  -0.7332304120063782,
+                  -0.6851992607116699,
+                  -0.6425031423568726,
+                  -0.6074404716491699,
+                  -0.5808883309364319,
+                  -4.2581329345703125,
+                  -4.229229927062988,
+                  -4.199565410614014,
+                  -0.4421696960926056,
+                  -2.1984803676605225,
+                  -2.1984803676605225,
+                  -4.156710147857666,
+                  4.408499049508917
+                ],
+                [
+                  -0.02807920053601265,
+                  -0.04833885282278061,
+                  -0.04833885282278061,
+                  -0.052072923630476,
+                  -0.03252318128943443,
+                  -0.03252318128943443,
+                  -0.029039552435278893,
+                  -0.029039552435278893,
+                  -0.029039552435278893,
+                  -0.029039552435278893,
+                  -0.03625144436955452,
+                  -0.03625144436955452,
+                  -0.03625144436955452,
+                  -0.09377724677324295,
+                  -0.04701599106192589,
+                  -0.04701599106192589,
+                  -0.09052789956331253,
+                  -0.0899767279624939,
+                  -0.08940797299146652,
+                  -0.08882232010364532,
+                  -0.08822040259838104,
+                  -0.0876028835773468,
+                  2.2850706577301025,
+                  11.51996898651123,
+                  -2.33270525932312,
+                  -2.33107328414917,
+                  -2.308293342590332,
+                  -2.2735652923583984,
+                  -0.0986855998635292,
+                  -0.09719572961330414,
+                  -0.09592553228139877,
+                  -0.09503990411758423,
+                  -0.09446577727794647,
+                  -0.10998258739709854,
+                  -0.03987270966172218,
+                  -0.03987270966172218,
+                  -0.02264045551419258,
+                  -0.00968883465975523,
+                  -0.15832112729549408,
+                  -0.09382718056440353,
+                  -0.026767000555992126,
+                  -0.023891672492027283,
+                  -0.021100014448165894,
+                  -0.018513135612010956,
+                  -0.016177041456103325,
+                  -0.09325607866048813,
+                  -0.09290501475334167,
+                  -0.09253306686878204,
+                  -0.008279982954263687,
+                  -0.050336144864559174,
+                  -0.050336144864559174,
+                  -0.09199289977550507,
+                  0.09371097832681782
+                ],
+                [
+                  -0.031867899000644684,
+                  -0.054975029081106186,
+                  -0.054975029081106186,
+                  -0.057132355868816376,
+                  -0.033814579248428345,
+                  -0.033814579248428345,
+                  -0.032990019768476486,
+                  -0.032990019768476486,
+                  -0.032990019768476486,
+                  -0.032990019768476486,
+                  -0.038449618965387344,
+                  -0.038449618965387344,
+                  -0.038449618965387344,
+                  -0.09359653294086456,
+                  -0.04876077175140381,
+                  -0.04876077175140381,
+                  -0.0855850949883461,
+                  -0.08516914397478104,
+                  -0.08473417162895203,
+                  -0.08428078144788742,
+                  -0.08380955457687378,
+                  -0.08332110196352005,
+                  2.304034471511841,
+                  -2.2534401416778564,
+                  11.52054500579834,
+                  -2.331887722015381,
+                  -2.3301498889923096,
+                  -2.30733323097229,
+                  -0.10485240072011948,
+                  -0.10171902924776077,
+                  -0.09996303915977478,
+                  -0.09719260782003403,
+                  -0.09536796808242798,
+                  -0.12429101765155792,
+                  -0.04573366418480873,
+                  -0.04573366418480873,
+                  -0.02596551924943924,
+                  -0.011114664375782013,
+                  -0.18063299357891083,
+                  -0.09124092012643814,
+                  -0.030559655278921127,
+                  -0.027273574844002724,
+                  -0.024085422977805138,
+                  -0.021132219582796097,
+                  -0.01846582442522049,
+                  -0.08841918408870697,
+                  -0.08769597858190536,
+                  -0.08721784502267838,
+                  -0.009495600126683712,
+                  -0.05400211736559868,
+                  -0.05400211736559868,
+                  -0.0867539644241333,
+                  0.0869100432562193
+                ],
+                [
+                  -0.03601377084851265,
+                  -0.062252227216959,
+                  -0.062252227216959,
+                  -0.06471710652112961,
+                  -0.03823825716972351,
+                  -0.03823825716972351,
+                  -0.037309736013412476,
+                  -0.037309736013412476,
+                  -0.037309736013412476,
+                  -0.037309736013412476,
+                  -0.04315711557865143,
+                  -0.04315711557865143,
+                  -0.04315711557865143,
+                  -0.10010702908039093,
+                  -0.05214904993772507,
+                  -0.05214904993772507,
+                  -0.07492461800575256,
+                  -0.07389682531356812,
+                  -0.07301412522792816,
+                  -0.07233511656522751,
+                  -0.07182981818914413,
+                  -0.0714399591088295,
+                  2.326373338699341,
+                  -2.2894725799560547,
+                  -2.251331329345703,
+                  11.522865295410156,
+                  -2.3294990062713623,
+                  -2.3277668952941895,
+                  -0.11364594101905823,
+                  -0.11000370979309082,
+                  -0.10647166520357132,
+                  -0.10304676741361618,
+                  -0.10186531394720078,
+                  -0.13739697635173798,
+                  -0.05205634981393814,
+                  -0.05205634981393814,
+                  -0.02958192117512226,
+                  -0.012636230327188969,
+                  -0.2051582932472229,
+                  -0.09485674649477005,
+                  -0.03472483903169632,
+                  -0.030989225953817368,
+                  -0.027366043999791145,
+                  -0.024010391905903816,
+                  -0.02098088525235653,
+                  -0.0892438143491745,
+                  -0.08670283108949661,
+                  -0.08535623550415039,
+                  -0.0108219338580966,
+                  -0.06014667823910713,
+                  -0.06014667823910713,
+                  -0.08197259157896042,
+                  0.07109719656145497
+                ],
+                [
+                  -0.040420763194561005,
+                  -0.0700036808848381,
+                  -0.0700036808848381,
+                  -0.0727827399969101,
+                  -0.04292970150709152,
+                  -0.04292970150709152,
+                  -0.04189063236117363,
+                  -0.04189063236117363,
+                  -0.04189063236117363,
+                  -0.04189063236117363,
+                  -0.04815289378166199,
+                  -0.04815289378166199,
+                  -0.04815289378166199,
+                  -0.10800730437040329,
+                  -0.055196698755025864,
+                  -0.055196698755025864,
+                  -0.0739186629652977,
+                  -0.07189653813838959,
+                  -0.06992157548666,
+                  -0.06799308955669403,
+                  -0.06698375195264816,
+                  -0.06526511162519455,
+                  2.374260187149048,
+                  -2.306417942047119,
+                  -2.2811713218688965,
+                  -2.243065118789673,
+                  11.530948638916016,
+                  -2.321678400039673,
+                  -0.12207968533039093,
+                  -0.11789219826459885,
+                  -0.11384404450654984,
+                  -0.11362563818693161,
+                  -0.10998190194368362,
+                  -0.15412214398384094,
+                  -0.05852600187063217,
+                  -0.05852600187063217,
+                  -0.03334376588463783,
+                  -0.014158502221107483,
+                  -0.23132306337356567,
+                  -0.10166226327419281,
+                  -0.0391581691801548,
+                  -0.0349477119743824,
+                  -0.03086245246231556,
+                  -0.027078134939074516,
+                  -0.02366129867732525,
+                  -0.09526707231998444,
+                  -0.09236447513103485,
+                  -0.08954320102930069,
+                  -0.012210328131914139,
+                  -0.06321422010660172,
+                  -0.06321422010660172,
+                  -0.08427172899246216,
+                  0.019314676735123798
+                ],
+                [
+                  -0.04485812038183212,
+                  -0.07782492786645889,
+                  -0.07782492786645889,
+                  -0.08089017122983932,
+                  -0.047627564519643784,
+                  -0.047627564519643784,
+                  -0.04647666588425636,
+                  -0.04647666588425636,
+                  -0.04647666588425636,
+                  -0.04647666588425636,
+                  -0.053204286843538284,
+                  -0.053204286843538284,
+                  -0.053204286843538284,
+                  -0.11839954555034637,
+                  -0.060635022819042206,
+                  -0.060635022819042206,
+                  -0.07571446895599365,
+                  -0.07333177328109741,
+                  -0.07101951539516449,
+                  -0.07054463028907776,
+                  -0.06846937537193298,
+                  -0.06644927710294724,
+                  2.430981397628784,
+                  -2.2976491451263428,
+                  -2.2952911853790283,
+                  -2.2701356410980225,
+                  -2.2322819232940674,
+                  11.541391372680664,
+                  -0.13449035584926605,
+                  -0.12988176941871643,
+                  -0.1254262775182724,
+                  -0.12111905217170715,
+                  -0.11695534735918045,
+                  -0.17055881023406982,
+                  -0.06446682661771774,
+                  -0.06446682661771774,
+                  -0.03692794591188431,
+                  -0.015483038499951363,
+                  -0.25772809982299805,
+                  -0.11120576411485672,
+                  -0.043608713895082474,
+                  -0.03892936930060387,
+                  -0.03438229486346245,
+                  -0.030166979879140854,
+                  -0.026359524577856064,
+                  -0.10142458975315094,
+                  -0.0981089174747467,
+                  -0.0948965921998024,
+                  -0.013551285490393639,
+                  -0.06988804042339325,
+                  -0.06988804042339325,
+                  -0.08878373354673386,
+                  -0.04922341858857472
+                ],
+                [
+                  -0.16123946011066437,
+                  -0.21723362803459167,
+                  -0.21723362803459167,
+                  -0.23587849736213684,
+                  -0.17988425493240356,
+                  -0.17988425493240356,
+                  -0.14897769689559937,
+                  -0.14897769689559937,
+                  -0.14897769689559937,
+                  -0.14897769689559937,
+                  -0.19851499795913696,
+                  -0.19851499795913696,
+                  -0.19851499795913696,
+                  -0.5912492871284485,
+                  -0.2965785562992096,
+                  -0.2965785562992096,
+                  -0.5517877340316772,
+                  -0.5467998385429382,
+                  -0.5417384505271912,
+                  -0.5366084575653076,
+                  -0.5314145088195801,
+                  -0.5261613130569458,
+                  -0.48330628871917725,
+                  -0.09953926503658295,
+                  -0.09804633259773254,
+                  -0.0965421125292778,
+                  -0.09493570029735565,
+                  -0.09318839758634567,
+                  13.209817886352539,
+                  -0.6007890105247498,
+                  -0.5978397727012634,
+                  -0.5947495102882385,
+                  -0.5915231108665466,
+                  -0.5937018394470215,
+                  -0.12296434491872787,
+                  -0.12296434491872787,
+                  -0.08479145914316177,
+                  -0.026825955137610435,
+                  -0.5460363030433655,
+                  -0.5852574706077576,
+                  -0.10306490212678909,
+                  -0.09616678208112717,
+                  -0.08941154927015305,
+                  -0.08394395560026169,
+                  -0.0793020948767662,
+                  -0.5805246233940125,
+                  -0.5766892433166504,
+                  -0.5727421641349792,
+                  -0.05153580382466316,
+                  -0.29867222905158997,
+                  -0.29867222905158997,
+                  -0.5672637820243835,
+                  0.5964625241965038
+                ],
+                [
+                  -0.16060535609722137,
+                  -0.21846884489059448,
+                  -0.21846884489059448,
+                  -0.23775067925453186,
+                  -0.17988720536231995,
+                  -0.17988720536231995,
+                  -0.14939776062965393,
+                  -0.14939776062965393,
+                  -0.14939776062965393,
+                  -0.14939776062965393,
+                  -0.19916492700576782,
+                  -0.19916492700576782,
+                  -0.19916492700576782,
+                  -0.5941588282585144,
+                  -0.2979591488838196,
+                  -0.2979591488838196,
+                  -0.5564998388290405,
+                  -0.5515924096107483,
+                  -0.5466065406799316,
+                  -0.5415471792221069,
+                  -0.5364192724227905,
+                  -0.5312274694442749,
+                  -0.4855385422706604,
+                  -0.09988594055175781,
+                  -0.09846103936433792,
+                  -0.09702405333518982,
+                  -0.09548138827085495,
+                  -0.09379300475120544,
+                  -0.5233568549156189,
+                  13.210002899169922,
+                  -0.600609540939331,
+                  -0.597662627696991,
+                  -0.5945746302604675,
+                  -0.5970771312713623,
+                  -0.12769083678722382,
+                  -0.12769083678722382,
+                  -0.08791488409042358,
+                  -0.027964362874627113,
+                  -0.5529305338859558,
+                  -0.5885922908782959,
+                  -0.10419497638940811,
+                  -0.09774070233106613,
+                  -0.0908290296792984,
+                  -0.08512070029973984,
+                  -0.07993669807910919,
+                  -0.5839740633964539,
+                  -0.5802562236785889,
+                  -0.5764220356941223,
+                  -0.04715379700064659,
+                  -0.29974114894866943,
+                  -0.29974114894866943,
+                  -0.5711986422538757,
+                  0.5975672798085001
+                ],
+                [
+                  -0.1601361185312271,
+                  -0.21992751955986023,
+                  -0.21992751955986023,
+                  -0.2398439645767212,
+                  -0.18005260825157166,
+                  -0.18005260825157166,
+                  -0.14998061954975128,
+                  -0.14998061954975128,
+                  -0.14998061954975128,
+                  -0.14998061954975128,
+                  -0.19996850192546844,
+                  -0.19996850192546844,
+                  -0.19996850192546844,
+                  -0.5966076254844666,
+                  -0.2991035282611847,
+                  -0.2991035282611847,
+                  -0.5609230399131775,
+                  -0.5561066269874573,
+                  -0.5512067675590515,
+                  -0.5462283492088318,
+                  -0.5411762595176697,
+                  -0.5360556244850159,
+                  -0.48749756813049316,
+                  -0.10021638870239258,
+                  -0.09884459525346756,
+                  -0.09743480384349823,
+                  -0.09593969583511353,
+                  -0.09430649131536484,
+                  -0.5283618569374084,
+                  -0.5230115056037903,
+                  13.21034049987793,
+                  -0.6002779006958008,
+                  -0.597337543964386,
+                  -0.6001788973808289,
+                  -0.1325969099998474,
+                  -0.1325969099998474,
+                  -0.09115064889192581,
+                  -0.02915104292333126,
+                  -0.562053918838501,
+                  -0.5916568040847778,
+                  -0.10757575929164886,
+                  -0.1006363183259964,
+                  -0.09325040876865387,
+                  -0.08639466017484665,
+                  -0.08037582039833069,
+                  -0.5871573686599731,
+                  -0.5835655331611633,
+                  -0.5798524022102356,
+                  -0.04395720362663269,
+                  -0.3013712167739868,
+                  -0.3013712167739868,
+                  -0.5748319625854492,
+                  0.5982295474337116
+                ],
+                [
+                  -0.160548597574234,
+                  -0.22242975234985352,
+                  -0.22242975234985352,
+                  -0.2430848777294159,
+                  -0.1812034696340561,
+                  -0.1812034696340561,
+                  -0.15144014358520508,
+                  -0.15144014358520508,
+                  -0.15144014358520508,
+                  -0.15144014358520508,
+                  -0.201868936419487,
+                  -0.201868936419487,
+                  -0.201868936419487,
+                  -0.5983486175537109,
+                  -0.30007901787757874,
+                  -0.30007901787757874,
+                  -0.5647760033607483,
+                  -0.5600645542144775,
+                  -0.5552643537521362,
+                  -0.5503801107406616,
+                  -0.5454174280166626,
+                  -0.5403807759284973,
+                  -0.4889209568500519,
+                  -0.10071419179439545,
+                  -0.09902448952198029,
+                  -0.09766537696123123,
+                  -0.09623517096042633,
+                  -0.09467078745365143,
+                  -0.5328864455223083,
+                  -0.5276070237159729,
+                  -0.522271454334259,
+                  13.211065292358398,
+                  -0.5995668768882751,
+                  -0.6027149558067322,
+                  -0.13768921792507172,
+                  -0.13768921792507172,
+                  -0.09450265765190125,
+                  -0.030388036742806435,
+                  -0.574334442615509,
+                  -0.5942100882530212,
+                  -0.11105736345052719,
+                  -0.10165780037641525,
+                  -0.09463633596897125,
+                  -0.08763668686151505,
+                  -0.08126826584339142,
+                  -0.5898373126983643,
+                  -0.5863833427429199,
+                  -0.5828030705451965,
+                  -0.04272940009832382,
+                  -0.3036961853504181,
+                  -0.3036961853504181,
+                  -0.5779550671577454,
+                  0.5982531561123786
+                ],
+                [
+                  -0.1615053117275238,
+                  -0.22564063966274261,
+                  -0.22564063966274261,
+                  -0.24701403081417084,
+                  -0.18287663161754608,
+                  -0.18287663161754608,
+                  -0.15387442708015442,
+                  -0.15387442708015442,
+                  -0.15387442708015442,
+                  -0.15387442708015442,
+                  -0.2040800154209137,
+                  -0.2040800154209137,
+                  -0.2040800154209137,
+                  -0.5998386144638062,
+                  -0.30141517519950867,
+                  -0.30141517519950867,
+                  -0.5680323243141174,
+                  -0.563438892364502,
+                  -0.5587510466575623,
+                  -0.5539740920066833,
+                  -0.5491130948066711,
+                  -0.5441731810569763,
+                  -0.489862322807312,
+                  -0.10133848339319229,
+                  -0.09903513640165329,
+                  -0.09772632271051407,
+                  -0.09635142236948013,
+                  -0.09485623985528946,
+                  -0.536896824836731,
+                  -0.5317004919052124,
+                  -0.5264432430267334,
+                  -0.5211296081542969,
+                  13.212185859680176,
+                  -0.6057227253913879,
+                  -0.14297479391098022,
+                  -0.14297479391098022,
+                  -0.09797497093677521,
+                  -0.031677473336458206,
+                  -0.5891903042793274,
+                  -0.5961838364601135,
+                  -0.11464245617389679,
+                  -0.104949451982975,
+                  -0.09742068499326706,
+                  -0.08991940319538116,
+                  -0.08308379352092743,
+                  -0.5919480919837952,
+                  -0.5886451005935669,
+                  -0.5852106213569641,
+                  -0.04277874156832695,
+                  -0.30659109354019165,
+                  -0.30659109354019165,
+                  -0.5805254578590393,
+                  0.5974566237999177
+                ],
+                [
+                  -0.2871556282043457,
+                  -0.4196358621120453,
+                  -0.4196358621120453,
+                  -0.4637824594974518,
+                  -0.3313022255897522,
+                  -0.3313022255897522,
+                  -0.28192204236984253,
+                  -0.28192204236984253,
+                  -0.28192204236984253,
+                  -0.28192204236984253,
+                  -0.3754481077194214,
+                  -0.3754481077194214,
+                  -0.3754481077194214,
+                  -1.1227641105651855,
+                  -0.5623700022697449,
+                  -0.5623700022697449,
+                  -1.0671849250793457,
+                  -1.0592390298843384,
+                  -1.0511163473129272,
+                  -1.0428253412246704,
+                  -1.034374713897705,
+                  -1.0257726907730103,
+                  -0.9204844236373901,
+                  -0.18832506239414215,
+                  -0.18617413938045502,
+                  -0.18399834632873535,
+                  -0.18162719905376434,
+                  -0.17898477613925934,
+                  -1.012976884841919,
+                  -1.0039045810699463,
+                  -0.9947099685668945,
+                  -0.9854009747505188,
+                  -0.9759853482246399,
+                  12.201842308044434,
+                  0.7071134448051453,
+                  0.7071134448051453,
+                  -0.2698090076446533,
+                  0.9936351180076599,
+                  -1.400431752204895,
+                  12.738468170166016,
+                  -0.40793800354003906,
+                  -0.398479700088501,
+                  -0.40233609080314636,
+                  -0.36600175499916077,
+                  -0.32861053943634033,
+                  -1.1091099977493286,
+                  -1.1034077405929565,
+                  -1.0974756479263306,
+                  -0.24754446744918823,
+                  -0.5649123191833496,
+                  -0.5649123191833496,
+                  -1.0891704559326172,
+                  1.127440054123723
+                ],
+                [
+                  -0.028880484402179718,
+                  -0.05194646120071411,
+                  -0.05194646120071411,
+                  -0.05287950113415718,
+                  -0.02978108637034893,
+                  -0.02978108637034893,
+                  -0.029061026871204376,
+                  -0.029061026871204376,
+                  -0.029061026871204376,
+                  -0.029061026871204376,
+                  -0.03418440371751785,
+                  -0.03418440371751785,
+                  -0.03418440371751785,
+                  -0.08280401676893234,
+                  -0.043275441974401474,
+                  -0.043275441974401474,
+                  -0.07504882663488388,
+                  -0.07471667230129242,
+                  -0.07436737418174744,
+                  -0.07400141656398773,
+                  -0.0736193135380745,
+                  -0.07322157174348831,
+                  -0.07733811438083649,
+                  -0.015930812805891037,
+                  -0.014332919381558895,
+                  -0.012718976475298405,
+                  -0.011192643083631992,
+                  -0.009798409417271614,
+                  -0.07262659817934036,
+                  -0.07218126952648163,
+                  -0.07172203063964844,
+                  -0.07124941796064377,
+                  -0.0707639753818512,
+                  -0.4993472695350647,
+                  -0.48807695508003235,
+                  -0.48807695508003235,
+                  -0.0036302951630204916,
+                  -0.48107439279556274,
+                  1.8886303901672363,
+                  -0.06825824081897736,
+                  11.931989669799805,
+                  -1.932201623916626,
+                  -1.940617561340332,
+                  -1.9275181293487549,
+                  -1.902596354484558,
+                  -0.11207202821969986,
+                  -0.10973379015922546,
+                  -0.1080014631152153,
+                  -1.8695366382598877,
+                  -0.04848102852702141,
+                  -0.04848102852702141,
+                  -0.07608965784311295,
+                  0.07560034015886187
+                ],
+                [
+                  -0.15487565100193024,
+                  -0.27773040533065796,
+                  -0.27773040533065796,
+                  -0.30313175916671753,
+                  -0.1819198727607727,
+                  -0.1819198727607727,
+                  -0.15429067611694336,
+                  -0.15429067611694336,
+                  -0.15429067611694336,
+                  -0.15429067611694336,
+                  -0.1835409253835678,
+                  -0.1835409253835678,
+                  -0.1835409253835678,
+                  -0.4169914424419403,
+                  -0.20870566368103027,
+                  -0.20870566368103027,
+                  -0.2808345556259155,
+                  -0.2734074294567108,
+                  -0.2685251832008362,
+                  -0.26193198561668396,
+                  -0.25725042819976807,
+                  -0.2513780891895294,
+                  -0.4252167046070099,
+                  -0.08522412925958633,
+                  -0.07670481503009796,
+                  -0.06804046034812927,
+                  -0.05982331931591034,
+                  -0.05231047421693802,
+                  -0.24081730842590332,
+                  -0.23698702454566956,
+                  -0.23388071358203888,
+                  -0.23067140579223633,
+                  -0.22814320027828217,
+                  -2.0621674060821533,
+                  -1.9978039264678955,
+                  -1.9978039264678955,
+                  -0.017030667513608932,
+                  -1.963775634765625,
+                  7.697646617889404,
+                  -0.2178993970155716,
+                  -7.571305751800537,
+                  6.276627063751221,
+                  6.296504020690918,
+                  6.242737770080566,
+                  6.169072151184082,
+                  -0.5009229779243469,
+                  -0.49425795674324036,
+                  -0.48021209239959717,
+                  -7.69308614730835,
+                  -0.259470671415329,
+                  -0.259470671415329,
+                  -0.32017993927001953,
+                  0.21951264578504756
+                ],
+                [
+                  -0.5097943544387817,
+                  -0.7369609475135803,
+                  -0.7369609475135803,
+                  -0.8143591284751892,
+                  -0.5874309539794922,
+                  -0.5874309539794922,
+                  -0.506737470626831,
+                  -0.506737470626831,
+                  -0.506737470626831,
+                  -0.506737470626831,
+                  -0.6593711972236633,
+                  -0.6593711972236633,
+                  -0.6593711972236633,
+                  -1.8531686067581177,
+                  -0.940361738204956,
+                  -0.940361738204956,
+                  -1.7464481592178345,
+                  -1.7351436614990234,
+                  -1.7234766483306885,
+                  -1.7114622592926025,
+                  -1.6991163492202759,
+                  -1.6864545345306396,
+                  -1.4890638589859009,
+                  -0.32082515954971313,
+                  -0.3048836290836334,
+                  -0.2938399314880371,
+                  -0.28552258014678955,
+                  -0.280570387840271,
+                  -1.668613076210022,
+                  -1.654999852180481,
+                  -1.6411235332489014,
+                  -1.626999020576477,
+                  -1.6126405000686646,
+                  -1.609167218208313,
+                  -0.22487753629684448,
+                  -0.22487753629684448,
+                  -0.1950908899307251,
+                  -0.01993001252412796,
+                  -1.5679066181182861,
+                  -1.5843534469604492,
+                  -0.1638077199459076,
+                  -0.16023214161396027,
+                  -0.15696485340595245,
+                  -0.15367548167705536,
+                  -0.1502300351858139,
+                  12.163759231567383,
+                  12.139798164367676,
+                  12.069960594177246,
+                  -0.7421145439147949,
+                  -0.9739962220191956,
+                  -0.9739962220191956,
+                  -1.7743428945541382,
+                  1.7834614252354661
+                ],
+                [
+                  -0.0634496659040451,
+                  -0.11437944322824478,
+                  -0.11437944322824478,
+                  -0.11634784191846848,
+                  -0.06536266207695007,
+                  -0.06536266207695007,
+                  -0.06377198547124863,
+                  -0.06377198547124863,
+                  -0.06377198547124863,
+                  -0.06377198547124863,
+                  -0.07394678145647049,
+                  -0.07394678145647049,
+                  -0.07394678145647049,
+                  -0.16359487175941467,
+                  -0.08279451727867126,
+                  -0.08279451727867126,
+                  -0.09981591254472733,
+                  -0.09658527374267578,
+                  -0.09345389902591705,
+                  -0.09041900187730789,
+                  -0.08747783303260803,
+                  -0.08462774008512497,
+                  -0.17024360597133636,
+                  -0.03498225659132004,
+                  -0.03147280961275101,
+                  -0.02792680263519287,
+                  -0.024572867900133133,
+                  -0.021509194746613503,
+                  -0.07928173989057541,
+                  -0.07683970779180527,
+                  -0.07446742802858353,
+                  -0.07216319441795349,
+                  -0.06992528587579727,
+                  -0.5600511431694031,
+                  -0.5294793844223022,
+                  -0.5294793844223022,
+                  -0.008139892481267452,
+                  -0.5137598514556885,
+                  2.0084893703460693,
+                  -0.05408139154314995,
+                  -1.9090871810913086,
+                  -1.9096641540527344,
+                  -1.8906958103179932,
+                  -1.8606760501861572,
+                  -1.8237360715866089,
+                  0,
+                  0,
+                  0,
+                  11.945963859558105,
+                  -0.09633446484804153,
+                  -0.09633446484804153,
+                  -0.12039030343294144,
+                  -0.04121820858835967
+                ],
+                [
+                  -0.12495255470275879,
+                  -0.20082710683345795,
+                  -0.20082710683345795,
+                  -0.22036369144916534,
+                  -0.1456681787967682,
+                  -0.1456681787967682,
+                  -0.13065078854560852,
+                  -0.13065078854560852,
+                  -0.13065078854560852,
+                  -0.13065078854560852,
+                  -0.16349747776985168,
+                  -0.16349747776985168,
+                  -0.16349747776985168,
+                  -0.38980820775032043,
+                  -0.2034444659948349,
+                  -0.2034444659948349,
+                  -0.29633384943008423,
+                  -0.29023477435112,
+                  -0.2859165370464325,
+                  -0.28161558508872986,
+                  -0.2774697244167328,
+                  -0.27355673909187317,
+                  -0.3355906009674072,
+                  -0.07609112560749054,
+                  -0.06901102513074875,
+                  -0.06435327976942062,
+                  -0.057916343212127686,
+                  -0.05198110640048981,
+                  -0.26711907982826233,
+                  -0.26396292448043823,
+                  -0.26136329770088196,
+                  -0.25903671979904175,
+                  -0.2570445239543915,
+                  -0.26103630661964417,
+                  -0.06393160670995712,
+                  -0.06393160670995712,
+                  -0.04652954638004303,
+                  -0.012099262326955795,
+                  -0.27480781078338623,
+                  -0.25445830821990967,
+                  -0.05297151952981949,
+                  -0.0499531552195549,
+                  -0.04548301920294762,
+                  -0.04119376093149185,
+                  -0.038261231034994125,
+                  -0.2525283992290497,
+                  -0.2511241137981415,
+                  -0.24965965747833252,
+                  -0.020270755514502525,
+                  7.01372766494751,
+                  7.01372766494751,
+                  -0.32402515411376953,
+                  0.2542979548275495
+                ],
+                [
+                  -0.17910484969615936,
+                  -0.26516973972320557,
+                  -0.26516973972320557,
+                  -0.29062420129776,
+                  -0.2044813185930252,
+                  -0.2044813185930252,
+                  -0.17851951718330383,
+                  -0.17851951718330383,
+                  -0.17851951718330383,
+                  -0.17851951718330383,
+                  -0.23205877840518951,
+                  -0.23205877840518951,
+                  -0.23205877840518951,
+                  -0.6355604529380798,
+                  -0.3250722289085388,
+                  -0.3250722289085388,
+                  -0.5878646969795227,
+                  -0.5843088626861572,
+                  -0.5806204080581665,
+                  -0.5768046379089355,
+                  -0.5728671550750732,
+                  -0.5688133239746094,
+                  -0.506780207157135,
+                  -0.11167795956134796,
+                  -0.10535802692174911,
+                  -0.09973025321960449,
+                  -0.09547878056764603,
+                  -0.09211792796850204,
+                  -0.5630843043327332,
+                  -0.5586875081062317,
+                  -0.554192841053009,
+                  -0.5496055483818054,
+                  -0.5449305772781372,
+                  -0.5444105267524719,
+                  -0.08356134593486786,
+                  -0.08356134593486786,
+                  -0.06492983549833298,
+                  -0.0129487793892622,
+                  -0.49989956617355347,
+                  -0.5357443690299988,
+                  -0.08810368925333023,
+                  -0.0851752907037735,
+                  -0.08283689618110657,
+                  -0.08119212836027145,
+                  -0.07992842048406601,
+                  -0.5291466116905212,
+                  -0.5240605473518372,
+                  -0.5189135074615479,
+                  -0.06317129731178284,
+                  -0.28056296706199646,
+                  -0.28056296706199646,
+                  13.21685791015625,
+                  0.5933255428742938
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "goodbye for now"
+      ],
+      [
+        "en",
+        "bye bye take care"
+      ],
+      [
+        "en",
+        "okay see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi there"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "hiya"
+      ],
+      [
+        "en",
+        "hi-ya"
+      ],
+      [
+        "en",
+        "howdy-do"
+      ],
+      [
+        "en",
+        "aloha"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "good day"
+      ],
+      [
+        "en",
+        "good night"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "Enough"
+      ],
+      [
+        "en",
+        "name "
+      ],
+      [
+        "en",
+        "address"
+      ],
+      [
+        "en",
+        "email"
+      ],
+      [
+        "en",
+        "phone"
+      ],
+      [
+        "en",
+        "Order"
+      ],
+      [
+        "en",
+        "Want to order something"
+      ],
+      [
+        "en",
+        "Want to order some pizza"
+      ],
+      [
+        "en",
+        "Menu"
+      ],
+      [
+        "en",
+        "Veg Pizza"
+      ],
+      [
+        "en",
+        "Chesse Pizza"
+      ],
+      [
+        "en",
+        "Paneer Pizza"
+      ],
+      [
+        "en",
+        "Chicken Pizza"
+      ],
+      [
+        "en",
+        "tantoori Pizza"
+      ],
+      [
+        "en",
+        "Regular"
+      ],
+      [
+        "en",
+        "Medium"
+      ],
+      [
+        "en",
+        "Large"
+      ],
+      [
+        "en",
+        "Non-Veg Pizza"
+      ],
+      [
+        "en",
+        "Quantity of"
+      ],
+      [
+        "en",
+        "status"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "add": [
+          {
+            "answer": "Enter your address :"
+          }
+        ],
+        "em": [
+          {
+            "answer": "Enter your email please :"
+          }
+        ],
+        "ph": [
+          {
+            "answer": "Enter your phone number please :"
+          }
+        ],
+        "enough": [
+          {
+            "answer": "now you can order your food Type : \"order\" to select your pizza11"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "WELCOME TO YOYO PIZZA <br> Please enter your details before ordering the food <br> name (e.g : name abcd)     <br>  Address(e.g : address  25 abcd)     <br> email_id (e.g : emaill abc@gmail.com)      <br>     phone number (e.g : phone 1562920) "
+          }
+        ],
+        "end": [
+          {
+            "answer": "Your order id is 76788"
+          }
+        ],
+        "veg": [
+          {
+            "answer": " Veg Pizza List       <script>       $(\"button\").click(function() {         var socket = io();         var v_button = $(this).val();         if(v_button === \"1\")            msg = \"Cheese Pizza\";         else           msg = \"Paneer Pizza\";           setTimeout(function() {            socket.emit(\"chat message\", msg);          }, 1);          $(\"button\").hide();      });       </script>       <br>       <button  style=\"background-color: #16BFFD;border-radius: 10px\" value=\"1\" >Chesse Pizza</button>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"2\" >Chilly Pizza</button>"
+          }
+        ],
+        "nveg": [
+          {
+            "answer": "Non Veg Pizza List       <script>       $(\"button\").click(function() {         var socket = io();         var v_button = $(this).val();         if(v_button === \"1\")            msg = \"Chicken Pizza\";         else           msg = \"tantoori Pizza\";           setTimeout(function() {            socket.emit(\"chat message\", msg);          }, 1);          $(\"button\").hide();      });       </script>       <br>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"1\" >Chicken Pizza</button>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"2\" >tantoori Pizza</button>"
+          }
+        ],
+        "order": [
+          {
+            "answer": "Menu       <script>       $(\"button\").click(function() {         var socket = io();         var v_button = $(this).val();         if(v_button === \"1\")            msg = \"Veg Pizza\";         else            msg = \"Non-Veg Pizza\";            setTimeout(function() {            socket.emit(\"chat message\", msg);          }, 1);       });       </script>       <br>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"1\" >Veg Pizza</button>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"2\" >Non-Veg Pizza</button>"
+          }
+        ],
+        "value": [
+          {
+            "answer": "Size      <script>       $(\"button\").click(function() {         var socket = io();         var v_button = $(this).val();         if(v_button === \"1\")            msg =  \"Regular\";         else if(v_button === \"2\")          msg = \"Medium\";         else           msg =  \"Large\";           setTimeout(function() {            socket.emit(\"chat message\", msg);          }, 100);       });       </script>       <br>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"1\" >Regular</button>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"2\" >Medium</button>       <button style=\"background-color: #16BFFD;border-radius: 10px\" value=\"3\" > Large </button>"
+          }
+        ],
+        "size": [
+          {
+            "answer": "Select Number of pizza u need       <script>       $(\"button\").click(function() {         var socket = io();         var v_button = $(this).val();         if(v_button === \"1\")            msg = \"Quantity of 1\";         else if(v_button === \"2\")           msg = \"Quantity of 2\";         else            msg = \"Quantity of 3\";            setTimeout(function() {            socket.emit(\"chat message\", msg);          }, 19);       });       </script>       <br>       <button style=\"background-color: #16BFFD;border-radius: 10px ; width : 30px\" value=\"1\" >1</button>       <button style=\"background-color: #16BFFD;border-radius: 10px ; width : 30px\" value=\"2\" >2</button>       <button style=\"background-color: #16BFFD;border-radius: 10px ; width : 30px\" value=\"3\" >3</button> "
+          }
+        ],
+        "quantity": [
+          {
+            "answer": "any thing else      <script>      $(\"button\").click(function() {        var socket = io();        var v_button = $(this).val();        if(v_button === \"1\")           msg = \"Order\";        else if(v_button === \"2\")          msg = \"Enough\";           setTimeout(function() {           socket.emit(\"chat message\", msg);         }, 1);      });      </script>      <br>      <button value=\"1\" >order</button>      <button value=\"2\" >Enough </button> "
+          }
+        ],
+        "greetings.bye": [
+          {
+            "answer": "Till next time :)"
+          },
+          {
+            "answer": "see you soon!"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ChatBot</title>
+    <style>
+      * { padding: 0; box-sizing: border-box; }
+      body {
+        font: 19px Helvetica, Arial;
+        padding-left:20%;
+        padding-right:20%;
+       
+      }
+      .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  border-radius: 30px;
+  width: 40%;
+  background-image:
+    linear-gradient(
+      to right,
+      #ece9e6,
+      #ffffff
+    );
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  
+  width: 60%;
+  background-image:
+    linear-gradient(
+      to right,
+      #1cd8d2,
+      #93edc7
+    );
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+      #f {  position: fixed; bottom: 1%; left:20%; right:20%;  }
+      #f input { width:40%; font-size:120%;margin-left: 430px;margin-top: 360px; border-radius: 15px; }
+      #f button { background-color: #6dd5ed ;  margin-left:65px; margin-top: 361px;   width:15%;font-size:100%;border-radius: 15px; position: absolute;}
+      #messages { list-style-type: none; padding: 0; padding-bottom: 9%;}
+      #messages h4 { padding: 5px 10px;width: 490px;margin-left: 165px; border-radius: 15px;     box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12); font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      #messages h4:nth-child(odd) { background:#e4e5e6; text-align:right; }
+      #messages h4:nth-child(even) { background:darkgray; text-align:left; }
+     
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+    
+   
+    </style>
+
+  </head>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
+    let v = Math.floor(Math.random() * 100000)
+      $(function () {
+        var socket = io();
+        $('form').submit(function(e){
+          e.preventDefault(); // prevents page reloading
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<h4 >'+msg+'</h4>'));
+
+          if(msg.search("pizza11")>= 0)
+            {
+              const data ={
+                order_id: 5,
+                user_name : name,
+                orders : "cheese pizza",
+                address: add,
+                email_id:em,
+                phone: ph,
+
+                status: "Cooking.."
+              }
+               getData()
+             async function getData() {
+                response = await fetch('/pizza1', {
+                  method: 'POST', 
+                  headers: {
+                      'Content-Type': 'application/json',
+                    },
+                  body: JSON.stringify(data),
+                })
+                }
+                
+            }
+            if(msg.search("name ")>= 0)
+            {
+              let newStr = msg.replace(/name /g,'');
+                name = newStr;
+                console.log(name)
+                
+            }
+          
+            if(msg.search("address ")>= 0)
+            {
+              let newStr = msg.replace(/address /g,'');
+                add = newStr;
+                console.log(add)
+                
+            }
+            if(msg.search("email")>= 0)
+            {
+              let newStr = msg.replace(/email /g,'');
+                em = newStr;
+                console.log(em)
+                
+            }
+            if(msg.search("phone")>= 0)
+            {
+              let newStr = msg.replace(/phone /g,'');
+                ph = newStr;
+                console.log(ph)
+                
+            }
+            if(msg.search("status")>=0)
+            {
+              getapi()
+              async function getapi() {
+                const response = await fetch('/pizza/'+"4");
+                var data = await response.json();
+                console.log(data)
+                $('#messages').append($('<h4 >'+data[0].status+'</h4>'));
+              }
+            }
+        });
+
+      });
+  </script>
+
+
+  <body>
+    <div class="split left">
+      <img src="f.png" style="width: 35px;height: 30; margin-left: 10px; margin-bottom: 530px;;" alt="Avatar woman">
+      <div class="centered">
+        <img src="android.svg" alt="">
+        
+        <h2>YOYO PIZZA</h2>
+        <p>Keep calm and enjoy every pizza</p>
+        <h4 style="margin-top: 200px;;">About us</h4>
+      </div>
+      
+      <img src="a.png" style="width: 15px;height: 15; margin-top: 555px; margin-left: 220px; " >
+    </div>
+    
+    <div class="split right">
+      
+      <h1 style="color:#E6DADA; margin-left: 150px;">Welcome to YOYO pizza BOT</h1> 
+      <div id="sr">
+      
+    <ul id="messages">
+            <h4> I am a virtual Waiter
+            </h4>
+          
+            
+          </ul>
+          
+          <form action="" id="f">
+            <input id="m" autocomplete="off" /><button type="submit">Send</button>
+          </form>
+          </div>
+          </div>
+  </body>
+</html>
+
